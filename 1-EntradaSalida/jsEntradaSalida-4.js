@@ -4,6 +4,12 @@
 */
 function Mostar()
 {
-	
+	var nombre;
+	//Defino la variable
+	nombre=prompt("Ingrese Su Nombre");
+	//Guardo el dato en prompt
+	document.getElementById('elNombre').value=nombre;
+	//el document puede ir para el otro lado tambien
+
 }
 
