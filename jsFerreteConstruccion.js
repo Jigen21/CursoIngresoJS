@@ -37,13 +37,15 @@ function Materiales ()
 	var Ancho;
 	var BolsasDeCemento;
 	var BolsasDeCal;
-	Largo=document.getElementById('Largo');
-	Ancho=document.getElementById('Ancho');
+	Largo=document.getElementById('Largo').value;
+	Ancho=document.getElementById('Ancho').value;
 	Largo=parseInt(Largo);
 	Ancho=parseInt(Ancho);
 	BolsasDeCemento=parseInt(BolsasDeCemento);
 	BolsasDeCal=parseInt(BolsasDeCal);
-	ResultadoUno=(Largo+Ancho)*2)
+	BolsasDeCemento=(((Largo+Ancho)*2)*2);
+	BolsasDeCal=(((Largo+Ancho)*2)*3);
+	alert("La cantidad de Bolsas de cemento es" + BolsasDeCemento + "y la cantidad de bolsas de cal es " + BolsasDeCal);
 
 
 }
