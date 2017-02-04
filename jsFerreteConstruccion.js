@@ -43,8 +43,8 @@ function Materiales ()
 	Ancho=parseInt(Ancho);
 	BolsasDeCemento=parseInt(BolsasDeCemento);
 	BolsasDeCal=parseInt(BolsasDeCal);
-	BolsasDeCemento=(((Largo+Ancho)*2)*2);
-	BolsasDeCal=(((Largo+Ancho)*2)*3);
+	BolsasDeCemento=((Largo*Ancho)*2);
+	BolsasDeCal=((Largo*Ancho)*3);
 	alert("La cantidad de Bolsas de cemento es" + BolsasDeCemento + "y la cantidad de bolsas de cal es " + BolsasDeCal);
 
 
