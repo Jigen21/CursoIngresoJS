@@ -5,7 +5,7 @@ function Mostrar()
   var Estado;
   Edad=document.getElementById('edad').value;
   Estado=document.getElementById('estadoCivil').value;
-  
+  alert(Estado);
   if(Edad<18)
   {
   	

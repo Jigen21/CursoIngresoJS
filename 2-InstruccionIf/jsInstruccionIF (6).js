@@ -16,19 +16,19 @@ function Mostrar()
 		alert("Es un niño");
 	}*/
 
-	if(Edad>12&&Edad<18)
+	if(Edad>=13&&Edad<=17)
 	{
 		alert("Es adolescente");
 	}
 	else
 	{
-		if(Edad>17)
+		if(Edad>=18)
 		{
-			alert("Es mayor");
+			alert("Es Mayor");
 		}
-		else()
+		else if(Edad<=12)
 		{
-			alert("Es niño");
+			alert("Es Menor");
 		}
 // Esta mal el segundo
 
