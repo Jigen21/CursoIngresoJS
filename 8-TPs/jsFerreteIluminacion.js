@@ -45,7 +45,7 @@ function CalcularPrecio ()
  		{
  			if(Cantidad==4)
  			{
- 				if(Marca=="ArgentinaLuz"||Marca=="Felipe")
+ 				if(Marca=="ArgentinaLuz"||Marca=="FelipeLamparas")
  				{
  					PrecioConDescuento=PrecioBruto*0.75;
  				}
@@ -63,7 +63,7 @@ function CalcularPrecio ()
  			}
  			else
  			{
- 				if(Marca=="Felipe")
+ 				if(Marca=="FelipeLamparas")
  				{
  					PrecioConDescuento=PrecioBruto*0.90;
  				}
@@ -77,3 +77,4 @@ function CalcularPrecio ()
  	}
  	document.getElementById('precioDescuento').value=PrecioConDescuento;
 }
+//Falta la E,probar hacerlo solo con if,solo con switch,con if y switch,y combinados
