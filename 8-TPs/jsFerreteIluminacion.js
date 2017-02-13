@@ -75,6 +75,13 @@ function CalcularPrecio ()
  		}
  		
  	}
+ 	if(PrecioConDescuento>=120)
+ 	{
+ 		var PrecioImpuesto;
+ 		PrecioImpuesto=(PrecioConDescuento*0.10);
+ 		PrecioConDescuento=PrecioConDescuento+PrecioImpuesto;
+ 		alert("IIBB Usted pago"+PrecioConDescuento+"siendo"+ PrecioImpuesto+" el impuesto que se pagó.");
+ 	}
  	document.getElementById('precioDescuento').value=PrecioConDescuento;
 }
 //Falta la E,probar hacerlo solo con if,solo con switch,con if y switch,y combinados
