@@ -30,40 +30,43 @@ function verificar()
 	contadorIntentos=contadorIntentos+1;
 	document.getElementById('intentos').value=contadorIntentos;
 	NumeroIngresado=document.getElementById('numero').value;
-	if(NumeroIngresado==numeroSecreto)
-	{
-		alert("Es igual");
-		switch(contadorIntentos)
+	
+		if(contadorIntentos>0 && NumeroIngresado==numeroSecreto)
 		{
-		case"1":
-		alert("Usted es psiquico");
-		break;
+			switch(contadorIntentos)
+			{
+				case 1:
+				alert("Usted es psiquico");
+				break;
 
-		case"2":
-		alert("Excelente percepcion");
-		break;
+				case 2:
+				alert("excelente percepcion");
+				break;
 
-		case"3":
-		alert("Esto es suerte");
-		break;
+				case 3:
+				alert("esto es suerte");
+				break;
 
-		case"4":
-		alert("Excelente tecnica");
-		break;
+				case 4:
+				alert("excelente tecnica");
+				break;
 
-		case"5":
-		alert("Usted esta en la media");
-		break;
+				case 5:
+				alert("Usted esta en la media");
+				break;
 
-		case"6":
-		case"7":
-		case"8":
-		case"9":
-		case"10":
-		alert("Falta tecnica");
-		break;
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+				case 10:
+				alert("Falta tecnica!!");
+				break;
+
+				default:
+				alert("afortunado en el amor");
+			}
 		}
-	}
 
 	
 
