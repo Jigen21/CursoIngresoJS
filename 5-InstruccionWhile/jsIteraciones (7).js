@@ -4,14 +4,15 @@ function Mostrar()
 	var contador=0;
 	var acumulador=0;
 	var respuesta='si';
-	respuesta=prompt("Ingrese un numero")
+	var numero=0;
 
-	while(respuesta!="si")
+	while(respuesta=="si")
 	{
 		contador++;
-		respuesta=parseInt(respuesta);
-		acumulador=acumulador+respuesta;
-		respuesta=prompt("Ingrese Si para parar")
+		numero=prompt("ingrese numero");
+		numero=parseInt(numero);
+		respuesta=prompt("ingrese Si para continuar");
+		acumulador=acumulador+numero;
 	}
 
 
