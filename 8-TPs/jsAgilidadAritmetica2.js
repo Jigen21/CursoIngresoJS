@@ -38,11 +38,14 @@ function comenzar()
 	 		document.getElementById('Operador').value="Multiplicacion";
 	 		Resultado=RandomUno*RandomDos;
 		} 
-	temporizador = setInterval(comenzar,5000);
+
+	temporizador = setTimeout(Responder,4000);
+
 	
 }//FIN DE LA FUNCIÓN
 function Responder()
 {
+	
 	respuesta=document.getElementById('Respuesta').value;
 	if(respuesta==Resultado)
 	{
@@ -53,5 +56,5 @@ function Responder()
 		alert("Te equivocaste");
 	}
 
-
+//esta mal
 }//FIN DE LA FUNCIÓN

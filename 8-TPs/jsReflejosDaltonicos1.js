@@ -117,7 +117,7 @@ function Responder(colorParametro)
    }
 
 
-   else(ColorSecreto=="rojo")
+   else if(ColorSecreto=="rojo")
    {
    		switch(colorParametro)
    		{
@@ -130,7 +130,7 @@ function Responder(colorParametro)
    		}
    }
 
-
+ //falta el tiempo
 
 /*	if(colorParametro=="azul")
    {
