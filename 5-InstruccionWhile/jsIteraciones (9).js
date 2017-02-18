@@ -22,7 +22,7 @@ function Mostrar()
     var EdadDeMujeres;
     var PromedioDeEdadMujeres;
     var MujeresAprobadasConNotaPar;
-    var Bandera="nadie";
+    var Bandera="no";
     var NombreDel10;
     var SexoDel10;
     var EdadDel10;
@@ -60,11 +60,12 @@ function Mostrar()
 
       //Guardar los datos del primero que se saco 10
 
-      if(nota==10&&Bandera=="nadie")
+      if(nota==10&&Bandera=="no")
       {
       	NombreDel10=nombre;
       	EdadDel10=edad;
       	SexoDel10=sexo;
+      	Bandera=="si"
 
       }
 
