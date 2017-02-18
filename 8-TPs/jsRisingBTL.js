@@ -63,7 +63,7 @@ function ComenzarIngreso ()
       				document.getElementById("Sueldo").value=sueldobruto;
       				legajo=prompt("Ibgrese su legajo");
 
-      				if(legajo>0&&legajo<=9999)
+      				if(legajo>=1000&&legajo<=9999)
       				{
       					document.getElementById("Legajo").value=legajo;
       					nacionalidad=prompt("Ingrese su nacionalidad")
@@ -72,22 +72,25 @@ function ComenzarIngreso ()
       					{
       						nacionalidad="Argentino";
       						document.getElementById("Nacionalidad").value=nacionalidad;
+                                           verificacion=0;
       					}
 
       					if (nacionalidad=="E")
       					{
       						nacionalidad="Extranjero";
       						document.getElementById("Nacionalidad").value=nacionalidad;
+                                           verificacion=0;
       					}
 
       					if (nacionalidad=="N")
       					{
       						nacionalidad="Nacionalizado";
       						document.getElementById("Nacionalidad").value=nacionalidad;
+                                           verificacion=0;
       					}
 
       					
-                        verificacion=0;
+                                   
 
       				}
 
@@ -98,6 +101,7 @@ function ComenzarIngreso ()
       		}
 
       	}
+            
       }
 
 	}
