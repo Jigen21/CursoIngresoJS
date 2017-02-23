@@ -8,12 +8,10 @@ d.	Se pedirán un número positivo y se mostrará si el número es un número pr
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
  	var NumeroIngresado;
- 	var Eleccion;
  	var NumeroDivisor=1;
    var DivisoresPosibles=0;
    var Contador=1;
    var Resultado;
-   var ContadorDos=1;
    var NumeroPrimo;
     
 
@@ -82,7 +80,7 @@ function NumerosDivisibles()
    }
 }
 
-function VerificarPrimo()   //Le falta a este
+function VerificarPrimo()   
 {
    NumeroIngresado=document.getElementById('numero').value;
    NumeroIngresado=parseInt(NumeroIngresado);
