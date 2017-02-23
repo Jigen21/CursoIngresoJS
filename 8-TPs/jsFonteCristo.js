@@ -13,6 +13,8 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
    var DivisoresPosibles=0;
    var Contador=1;
    var Resultado;
+   var ContadorDos=1;
+   var NumeroPrimo;
     
 
 function ComenzarIngreso () 
@@ -116,27 +118,32 @@ function NumerosPrimos()
 
    if(NumeroIngresado>0)
    {
-
       while(NumeroIngresado!=0)
       {
-         
-         if(NumeroIngresado%Contador==0)
+         DivisoresPosibles=0;
+         Contador=1;
+
+         while(Contador<=NumeroIngresado)
          {
-            DivisoresPosibles++;
+            if(NumeroIngresado%Contador==0)
+            {
+               DivisoresPosibles++;
+            }
+            Contador++;
          }
-         
-         if(DivisoresPosibles==2)
+
+      if(DivisoresPosibles==2)
          {
-           alert("asd");
+            NumeroPrimo=NumeroIngresado;
+            alert(NumeroPrimo);
          }
-         NumeroIngresado--;
-         Contador++;
+        NumeroIngresado--;
 
       }
-      
-      
+
 
    }
+   
 }
 
 
