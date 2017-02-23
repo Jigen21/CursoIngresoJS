@@ -10,6 +10,9 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
  	var NumeroIngresado;
  	var Eleccion;
  	var NumeroDivisor=1;
+   var DivisoresPosibles=0;
+   var Contador=1;
+   var Resultado;
     
 
 function ComenzarIngreso () 
@@ -47,7 +50,7 @@ function NumerosImpares()
 
    	if(NumeroIngresado % 2 != 0)
    	{
-       alert(NumeroIngresado);
+         alert(NumeroIngresado);
    	}
    	NumeroIngresado=NumeroIngresado-1;
 
@@ -62,6 +65,9 @@ function NumerosDivisibles()
    NumeroIngresado=parseInt(NumeroIngresado);
    NumeroDivisor=parseInt(NumeroDivisor);
    
+   if(NumeroIngresado>0)
+   {
+
    while(NumeroDivisor<101)
    {
    	 if(NumeroIngresado%NumeroDivisor == 0)
@@ -70,29 +76,67 @@ function NumerosDivisibles()
    	 }
    	 NumeroDivisor++;
    }
+
+   }
 }
 
 function VerificarPrimo()   //Le falta a este
 {
    NumeroIngresado=document.getElementById('numero').value;
    NumeroIngresado=parseInt(NumeroIngresado);
-   NumeroDivisor=NumeroIngresado;
 
-   while(NumeroIngresado>0)
+   if(NumeroIngresado>0)
    {
-   	 NumeroIngresado--;
-   	 if(NumeroIngresado%NumeroDivisor == 0)
-   	 {
-   	 	alert(NumeroIngresado)
-   	 }
-   	 
+
+      while(Contador<=NumeroIngresado)
+      {
+         if(NumeroIngresado%Contador==0)
+         {
+            DivisoresPosibles++;
+         }
+         Contador++;
+      }
+      if(DivisoresPosibles==2)
+      {
+         alert("Es un Numero Primo");
+      }
+      else
+      {
+         alert("No es un Numero Primo");
+      }
+
    }
   
 }
 
 function NumerosPrimos()
 {
-   alert("asdasd5");
+   NumeroIngresado=document.getElementById('numero').value;
+   NumeroIngresado=parseInt(NumeroIngresado);
+
+   if(NumeroIngresado>0)
+   {
+
+      while(NumeroIngresado!=0)
+      {
+         
+         if(NumeroIngresado%Contador==0)
+         {
+            DivisoresPosibles++;
+         }
+         
+         if(DivisoresPosibles==2)
+         {
+           alert("asd");
+         }
+         NumeroIngresado--;
+         Contador++;
+
+      }
+      
+      
+
+   }
 }
 
 
