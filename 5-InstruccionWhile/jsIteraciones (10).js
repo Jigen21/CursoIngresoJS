@@ -9,11 +9,11 @@ function Mostrar()
 	var SumaDeLosNegativos=0;
 	var SumaDeLosPositivos=0;
 	var CantidadDePositivos=0;
-    var CantidadDeNegativos=0;
-    var CantidadDeCeros=0;
-    var PromedioDePositivos;
-    var PromedioDeNegativos;
-    var CantidadDeNumerosPares;
+  var CantidadDeNegativos=0;
+  var CantidadDeCeros=0;
+  var PromedioDePositivos;
+  var PromedioDeNegativos;
+  var CantidadDeNumerosPares=0;
 
 	while(respuesta!="no")
 	{
@@ -46,7 +46,7 @@ function Mostrar()
       	}
 
       	//Cantidad De Numeros Pares
-      	if(Numeros%2 == 0)
+      	if(Numeros%2==0)
       	{
       		CantidadDeNumerosPares=parseInt(CantidadDeNumerosPares);
       		CantidadDeNumerosPares++;
