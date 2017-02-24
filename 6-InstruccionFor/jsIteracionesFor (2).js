@@ -10,10 +10,10 @@ function Mostrar()
    var mascotamal=0;
    var perro=0;
    var gato=0;
-   var edad;
-   var edadmayor;
-   var edadmaxima;
-   var edadminima;
+   var edad=0;
+   var edadmayor=0;
+   var edadmaxima=0;
+   var edadminima=0;
 
    for(cont=0;cont<3;cont++)
   {
